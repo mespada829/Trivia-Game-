@@ -6,7 +6,7 @@
 //Declare functions
 // Time Converter Functions
 // Functions Calls
-// Open document ready function 
+
 
 //=======++++====================================++++
 // I CAN"T FIGURE OUT THE REMAINING ERRORS :( 
