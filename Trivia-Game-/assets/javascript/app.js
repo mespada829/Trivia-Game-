@@ -1,12 +1,16 @@
 //=========================//
-
+// What do I need?
+// Open document ready function 
 // Must declare the variables that will contain questions, answers and correct choice
 // The Counters - to track wins and losses
+//Declare functions
+// Time Converter Functions
+// Functions Calls
 // Open document ready function 
 
-//=======++++====================================
+//=======++++====================================++++
 // I CAN"T FIGURE OUT THE REMAINING ERRORS :( 
-//======++++++====================================
+//======++++++====================================++++
 
 
 $(document).ready(function(){
@@ -49,7 +53,7 @@ var game = {
 
 
 // FUNCTION DECLARATIONS
-// ==============================================================================       
+     
     start: function(){
         var counter = setInterval(game.count, 1000);
         if (game.time < 0) {
@@ -95,11 +99,10 @@ var game = {
         return minutes + ":" + seconds;
     }, 
 
-    // END OF TIME CONVERTER
     // DISPLAY QUESTIONS
 
     displayFirstQuestion: function(){
-        $("#question").html("<h2>" + game.trivia.q1.question + "</h2>");
+        $("#question").html( game.trivia.q1.question);
         $("#a1").html("<p id='a1'>" + game.trivia.q1.a1 + "</p>");
         $("#a2").html("<p id='a2'>" + game.trivia.q1.a2 + "</p>");
         $("#a3").html("<p id='a3'>" + game.trivia.q1.a3 + "</p>");
@@ -206,8 +209,9 @@ var game = {
 
 
 }; 
+    
 // FUNCTION CALLS
-    // ==============================================================================
+    
 
     $("#timer").on('click', game.start());
     $("#question").on('click', game.displayFirstQuestion());
