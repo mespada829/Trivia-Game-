@@ -1,2 +1,2 @@
 # Trivia-Game-
-A movies trivia game 
+Are you a true fan? Enjoy some Back to the Future movie clips and try to answer some trivia questions. 
